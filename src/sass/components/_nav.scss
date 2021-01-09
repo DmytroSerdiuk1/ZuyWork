@@ -1,0 +1,138 @@
+.nav{
+    position: relative;
+    z-index: 100;
+    padding: 50px 0;
+    .logo{
+        z-index: 100;
+    }
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        transition: ease 1s;
+        &-link{
+            margin-left: 50px;
+            color: #000000;
+            &__list{
+                font-family: "Golos";
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                &_blue{
+                    color: $blue-color;
+                    font-family: "Golos";
+                    font-weight: 600;
+                }
+                sup{
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #FF7062;
+                    font-family: "Golos";
+                }
+            }
+        }
+    }
+    .burger{
+        display: none;
+    }
+}
+@media(max-width: 1000px){
+    .nav{
+        .menu{
+            display: none;
+        }
+    }
+    .menu_active{
+        position: fixed;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        background: #fff;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        align-items: center !important;
+        .menu-link{
+            margin-left: 0 !important;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+        .menu-link__list{
+            font-family: "Golos";
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 22px;
+        }
+    }
+    .nav{
+        padding: 25px 0;
+    }
+    .burger{
+        display: block !important;
+        z-index: 100;
+        width: 35px;
+        height: 30px;
+        &-line{
+            position: relative;
+            height: 2px;
+            width: 35px;
+            background-color: #000;
+            &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 35px;
+                background-color: #000;
+                top: 10px;
+                transition: ease .5s;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 35px;
+                background-color: #000;
+                bottom: -20px;
+                transition: ease .5s;
+            }
+        }
+    }
+    .burger_active{
+        display: block;
+        position: relative;
+        .burger-line{
+            background: none !important;
+            transition: ease .2s;
+            &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 35px;
+                background-color: #000;
+                transform: rotate(-45deg) !important;
+                top: 10px;
+                transition: ease .5s;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 35px;
+                background-color: #000;
+                transform: rotate(45deg) !important;
+                top: 10px;
+                transition: ease .5s;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.video-header{
+    background: linear-gradient(270deg, #FF7062 -13.39%, #0005FF 57.94%,);
+    height: 300px;
+    .video{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);;
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        &-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+.workes{
+    margin-top: 250px;
+    padding-bottom: 350px;
+}
+.work-item{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+    &__text{
+        position: relative;
+    }
+    &__name{
+        font-family: "Golos";
+        margin-top: 15px;
+        font-size: 30px;
+        line-height: 36px;
+        color: #000000;
+        max-width: 264px;
+    }
+    &__type{
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0005FF;
+    }
+    &__date{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: right;
+        color: #000000;
+    }
+}
+
+.mdt{
+    &-50{
+        margin-top: 50px;
+    }
+    &--50{
+        margin-top: -50px;
+    }
+    &-100{
+        margin-top: 100px;
+    }
+    &--100{
+        margin-top: -100px;
+    }
+    &-200{
+        margin-top: 200px;
+    }
+}
+@media(max-width: 769px){
+    .mdt{
+        &-50{
+            margin-top: 0;
+        }
+        &--50{
+            margin-top: 0;
+        }
+        &-100{
+            margin-top: 0;
+        }
+        &--100{
+            margin-top: 0;
+        }
+        &-200{
+            margin-top: 0;
+        }
+    }
+    .work-item{
+        margin-bottom: 100px;
+    }
+    .workes{
+        padding-bottom: 150px;
+    }
+}

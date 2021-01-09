@@ -1,0 +1,63 @@
+// Consolas
+@font-face {
+    font-family: "Consolas"; 
+    src: local('Consolas-Bold'), local('Consolas-Bold'), url('../font/Consolas-Bold.woff2') format('woff2'), url('../font/Consolas-Bold.woff') format('woff'), url('../font/Consolas-Bold.ttf') format('truetype'); 
+    font-style: 600; 
+    font-weight: 600;
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Consolas"; 
+    src: local('Consolas-Regular'), local('Consolas-Regular'), url('../font/Consolas.woff2') format('woff2'), url('../font/Consolas.woff') format('woff'), url('../font/Consolas.ttf') format('truetype'); 
+    font-style: 500; 
+    font-weight: 500;
+    font-display: swap;
+} 
+
+// Arial
+
+@font-face {
+    font-family: "Arial"; 
+    src: url("../font/Arial-Black.ttf") format("truetype"); 
+    font-style: 800; 
+    font-weight: 800;
+    font-display: swap;
+}
+
+// GolosText
+
+@font-face {
+    font-family: 'Golos';
+    src: local('Golos Text Regular'), local('GolosText-Regular'), url('../font/Golostextregular.woff2') format('woff2'), url('../font/Golostextregular.woff') format('woff'), url('../font/Golostextregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Golos';
+    src: local('Golos Text DemiBold'), local('GolosText-DemiBold'), url('../font/Golostextdemibold.woff2') format('woff2'), url('../font/Golostextdemibold.woff') format('woff'), url('../font/Golostextdemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Golos';
+    src: local('Golos Text Black'), local('GolosText-Black'), url('../font/Golostextblack.woff2') format('woff2'), url('../font/Golostextblack.woff') format('woff'), url('../font/Golostextblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Golos';
+    src: local('Golos Text Medium'), local('GolosText-Medium'), url('../font/Golostextmedium.woff2') format('woff2'), url('../font/Golostextmedium.woff') format('woff'), url('../font/Golostextmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Golos';
+    src: local('Golos Text Bold'), local('GolosText-Bold'), url('../font/Golostextbold.woff2') format('woff2'), url('../font/Golostextbold.woff') format('woff'), url('../font/Golostextbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

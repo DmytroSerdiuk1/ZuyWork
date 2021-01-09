@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Consolas";
+    font-weight: 400;
+}
+body{
+    perspective: 1px; 
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+.title{
+    font-family: "Golos";
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 400;
+    width: 600px;
+    span{
+        font-family: "Golos";
+        color: $blue-color;
+        font-weight: 700;
+    }
+    &_bio{
+        width: 700px;
+        font-weight: 500;
+        &_white{
+            color: #fff;
+        }
+    }
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.bio-title{
+    font-family: "Golos";
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    &_white{
+        color: #fff;
+    }
+    &_center{
+        position: relative;
+        margin-left: -200px;
+        width: 555px;
+        z-index: 2;
+        &::before{
+            content: 'ü';
+            z-index: -1;
+            position: absolute;
+            top: -30px;
+            left: -50px;
+            font-family: sans-serif;
+            font-size: 144px;
+            font-weight: 600;
+            color: #F4F4F4;
+        }
+    }
+}
+.folios{
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.work-section{
+    position: relative;
+}
+.work-emblema{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -50%;
+}
+.social{
+    position: absolute;
+    display: flex;
+    top: 400px;
+    z-index: 5;
+    right: 100px;
+    transform: rotate(90deg);
+    &-link{
+        margin-right: 25px;
+        &__list{
+            color: #000000;
+        }
+    }
+}
+@media(max-width: 1200px){
+    .title{
+        font-size: 55px;
+    }
+    .work-emblema{
+        bottom: -30%;
+        width: 200px;
+    }
+}
+@media(max-width: 766px){
+    .title{
+        font-size: 43px;
+        width: 390px;
+    }
+    .bio-title_center{
+        margin-left: 0;
+        width: 100%;
+    }
+    .work-emblema{
+        bottom: -30%;
+        width: 150px;
+    }
+}
+@media(max-width: 410px){
+    .title{
+        font-size: 36px;
+        width: 100%;
+    }
+    .bio-title_center{
+        font-size: 36px;
+    }
+}
+@media(max-width: 1600px){
+    .social{
+        display: none;
+    }
+}

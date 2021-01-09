@@ -1,0 +1,116 @@
+.header{
+    .video-wrapper{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        .videos{
+            z-index: -2;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.438);
+            z-index: 1;
+        }
+    }
+    &-block{
+        position: relative;
+        max-width: 1350px;
+        height: 650px;
+        margin: 0 auto;
+        background: #FBFBFB;
+        box-shadow: -13px 216px 250px rgba(0, 0, 0, 0.08);
+        padding-top: 235px;
+        overflow: hidden;
+        z-index: -3;
+    }
+    &-type-work{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+        ul{
+            margin: 0 20px;
+            li{
+                margin: 5px 0;
+            }
+        }
+    }
+    &-folio{
+        position: relative;
+        margin-top: 85px;
+        padding-bottom: 200px;
+        .folio-block{
+            position: relative;
+            width: 100%;
+            height: 395px;
+            background: linear-gradient(270deg, #FF7062 -18.18%, #0005FF 68.73%);
+            &_left{
+                background: linear-gradient(270deg, #FF7062 -18.18%, #0005FF 68.73%);
+            }
+            &_right{
+                background: linear-gradient(270deg, #0005FF -18.18%, #FF7062 68.73%);
+            }
+            .folio{
+                position: absolute;
+                top: 11px;
+                right: 11px;
+                font-size: 24px;
+                color: #FFFFFF;
+            }
+            .tag-name{
+                position: absolute;
+                left: 55px;
+                bottom: 30px;
+                font-family: "Golos", sans-serif;
+                font-size: 48px;
+                color: #FFFFFF;
+            }
+        }
+        .emblema{
+            position: absolute;
+            top: 250px;
+            right: -140px;
+        }
+    }
+}
+@media(max-width: 1415px){
+    .emblema{
+        display: none;
+    }
+}
+@media(max-width: 766px){
+    .folio-block{
+        height: 300px !important;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 996px){
+    .header-folio{
+        margin-top: 40px;
+        padding-bottom: 100px;
+    }
+    .folio-block{
+        height: 300px !important;
+    }
+}
+@media(max-width: 410px){
+    .header-block{
+        padding-top: 100px !important;
+    }
+    .header-type-work{
+        float: left !important;
+        flex-direction: column;
+        ul{
+            margin: 0;
+        }
+    }
+}

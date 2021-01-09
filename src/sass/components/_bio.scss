@@ -1,0 +1,180 @@
+.biography{
+    &-title{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .bio-header{
+        position: relative;
+        padding-top: 280px;
+        margin-top: -130px;
+        background: linear-gradient(0deg, #F9F9F9, #F9F9F9);
+        z-index: 1;
+        height: 800px;
+        width: 100vw;
+        .bio-subtitle{
+            text-align: center;
+            margin-top: 50px;
+            font-family: "Consolas";
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            &::after{
+                content: '';
+                background: url(../img/bio-img/ghost.png);
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                margin-left: 20px;
+            vertical-align: middle;
+            }
+        }
+        .bio-emblema{
+            position: absolute;
+            bottom: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 140px;
+            height: 140px;
+        }
+    }
+    .bio{
+        padding: 150px 0;
+        &-left{
+            display: flex;
+            flex-direction: column;
+            .connection{
+                margin-top: 730px;
+                width: 150px;
+                li{
+                    margin: 20px 0;
+                }
+                a{
+                    display: block;
+                }
+                .small{
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #C7C7C7;
+                }
+                .strong{
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #727272
+                }
+            }
+        }
+        &-gif{
+            display: inline-block;
+            width:100%;
+            object-fit:cover;
+        }
+        &-button{
+            width: 100%;
+            padding: 20px 0;
+            margin: 0 auto;
+            margin-top: 40px;
+            background: none;
+            border: 1px solid #0005FF;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 24px;
+            line-height: 36px;
+            color: #0005FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                margin-left: 10px;
+            }
+        }
+        .arrow{
+            margin-top: 60px;
+        }
+        &-arrow{
+            margin: 0 auto;
+            margin-top: 90px;
+        }
+        &-text{
+            margin-top: 100px;
+            p{
+                margin: 100px 0;
+                span{
+                    color: $blue-color;
+                }
+            }
+        }
+        &-experience{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 70px;
+        }
+    }
+    .work{
+       background: #000; 
+       color: #fff;
+       padding: 100px 0;
+       &-arrow{
+           margin-top: 20px;
+       }
+       &-top-block{
+           margin-top: 100px;
+           align-items: center;
+           padding-bottom: 50px;
+       }
+       hr{
+           width: 100%;
+           border: 1px solid #727272;
+       }
+       &-wrapper{
+           padding-top: 50px;
+           &__item{
+               padding-bottom: 20px;
+               margin-top: 10px;
+               &-name{
+                    font-family: "Golos";
+                    color: #fff;
+                    font-size: 24px;
+                    line-height: 36px;
+                    sup{
+                        margin-left: 10px;
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+               }
+               &-text{
+                   margin-top: 10px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #727272;
+                span{
+                    color: #FF7062;
+                    display: inline-block;
+                }
+               }
+           }
+       }
+    }
+}
+@media(max-width: 993px){
+    .connection{
+        display: none;
+    }
+    .bio-arrow{
+        display: none;
+    }
+}
+@media(max-width: 766px){
+    .bio-text{
+        margin-top: 10px !important;
+    }
+    .work-arrow{
+        display: none;
+    }
+}
+@media(max-width: 400px){
+    .bio-experience__tab{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
